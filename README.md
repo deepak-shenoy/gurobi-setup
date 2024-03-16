@@ -44,3 +44,24 @@ constraint for copper:
 Cu <= 1000
 ```
 The realities of the problem also need to be reflected.  While a dime is worth 10 cents, half a dime is not worth 5 cents.
+
+## LP File
+The Linear Programing file would resemble something like the following:
+
+```text
+Maximize
+  .01 Pennies + 0.5 Nickels + .1 Dimes +.25 Quarters + 1 Dollars
+Subject To
+  Copper: .06 Pennies + 3.8 Nickles + 2.1 Dimes + 5.2 Quarters + 7.2 Dollars - Cu = 0
+  Nickel: 1.2 Nickels + .2 Dimes + .5 Quarters + .2 Dollars - Ni = 0
+  Zinc: 2.4 Pennies + .5 Dollars - Zi = 0
+  Manganese: .3 Dollars - Mn = 0
+Bounds
+  Cu <= 1000
+  Ni <= 50
+  Zi <= 50
+  Mn <= 50
+Integers
+  Pennies Nickels Dimes Quarters Dollars
+End
+```
