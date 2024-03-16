@@ -22,3 +22,6 @@ Nickles, Dimes, Quarters and Dollars
 
 This then defines our linear objective:
 
+```text
+maximize: 0.01 Pennies + 0.05 Nickles + 0.1 Dimes + 0.25 Quarters + 1 Dollars
+```
