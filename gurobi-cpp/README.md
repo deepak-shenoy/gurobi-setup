@@ -27,3 +27,5 @@ GRBEnv env = GRBEnv(true);
 env.set("LogFile", "mip1.log");
 env.start();
 ```
+
+The environment (e.g. in this case `env`) can then be used with the Gurobi API.
