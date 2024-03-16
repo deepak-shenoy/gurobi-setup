@@ -53,7 +53,8 @@ Unless specified, a variable has a zero lower bound and an infinite upper bound.
 The realities of the problem also need to be reflected.  While a dime is worth 10 cents, half a dime is not worth 5 cents.
 
 ## LP File
-The Linear Programing file would resemble something like the following:
+The Linear Programing file would resemble something like the following and placed into a file (an example can be found 
+as `coins.lp` in the `cli-scripts` folder:
 
 ```text
 Maximize
@@ -71,4 +72,11 @@ Bounds
 Integers
   Pennies Nickels Dimes Quarters Dollars
 End
+```
+
+## Running the Optimizer
+Running the optimized with the LP file would follow the following example:
+
+```text
+gurobi_cl ResultFile=.\scratch-results\coins.sol .\cli-scripts\coins.lp
 ```
