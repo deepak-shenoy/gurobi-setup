@@ -6,6 +6,8 @@
 3. Linear constraints
 
 ### Sample problem
+If we have a limited supply of metals, what is the greatest dollar value of 
+coins that can be created from those materials?
 
 | Material    | Penny | Nickle | Dime | Quarter | Dollar |
 |:------------|:------|:------|:-----|:--------|:------|
@@ -14,4 +16,5 @@
 | Zinc (Zi)   | 2.4g  |       |      |         |0.5g|
 |Manganese (Mn)|    |     |      |      |0.3g|
 
-
+### Decision Variables
+The decision variables are what coins we need to produce
