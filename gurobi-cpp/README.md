@@ -21,3 +21,9 @@ x, y, z binary
 ### Creating the Environment
 The environment is created using the class `GRBEnv` and the log file name is specified by setting the environmental variable
 `LogFile`.
+
+```text
+GRBEnv env = GRBEnv(true);
+env.set("LogFile", "mip1.log");
+env.start();
+```
