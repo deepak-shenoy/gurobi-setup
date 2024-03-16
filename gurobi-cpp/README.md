@@ -17,3 +17,7 @@ x + 2y + 3z <= 4
 x+y >= 1
 x, y, z binary
 ```
+
+### Creating the Environment
+The environment is created using the class `GRBEnv` and the log file name is specified by setting the environmental variable
+`LogFile`.
