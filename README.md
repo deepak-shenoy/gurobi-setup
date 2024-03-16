@@ -32,3 +32,14 @@ metals.  For example, the breakdown of how copper would be used would look like 
 ```text
 Cu = 0.06 Pennies + 3.8 Nickles + 2.1 Dimes + 5.2 Quarters + 7.2 Dollars
 ```
+
+The coefficients define how much of each material a specific coin type will use.  For example, a Penny would use 0.06g
+of copper and one Nickle uses 3.8g of copper.
+
+### Constraints
+For our example, if we assume that we have 1000 grams of copper and 50 grams of other materials we can define the following
+constraint for copper:
+
+```text
+Cu <= 1000
+```
