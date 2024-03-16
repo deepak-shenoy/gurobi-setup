@@ -1,7 +1,10 @@
 # CPP Solution
 
-### Example
-This example is from Gurobi.  The objective is to optimize the following model:
+## Example
+This example is from Gurobi.
+
+### Objective
+The objective is to optimize the following model:
 
 ```text
 x + y + 2z
