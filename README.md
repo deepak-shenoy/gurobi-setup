@@ -135,3 +135,21 @@ Best objective 1.147000000000e+02, best bound 1.147000000000e+02, gap 0.0000%
 
 Wrote result file 'scratch-results/coins.sol'
 ```
+
+## Results
+
+The results file 'coins.sol' would look something like the following example:
+
+```text
+# Objective value = 114.7
+Pennies 0
+Nickels 3
+Dimes 2
+Quarters 52
+Dollars 100
+Nickles 1.4210526315789118e+00
+Cu 1000
+Ni 50
+Zi 50
+Mn 30
+```
