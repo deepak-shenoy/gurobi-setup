@@ -16,7 +16,7 @@ coins that can be created from those materials?
 | Zinc (Zi)   | 2.4g  |       |      |         |0.5g|
 |Manganese (Mn)|    |     |      |      |0.3g|
 
-### Decision Variables
+### Decision Variables and Constraints
 The **decision variables** are what coins we need to produce: Pennies, 
 Nickles, Dimes, Quarters and Dollars
 
@@ -24,4 +24,11 @@ This then defines our linear objective:
 
 ```text
 maximize: 0.01 Pennies + 0.05 Nickles + 0.1 Dimes + 0.25 Quarters + 1 Dollars
+```
+
+The constraints of this model represent that creating a coin will consume certain quantities of the
+metals.  For example, the breakdown of how copper would be used would look like the following:
+
+```text
+Cu = 0.06 Pennies + 3.8 Nickles + 2.1 Dimes + 5.2 Quarters + 7.2 Dollars
 ```
