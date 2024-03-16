@@ -153,3 +153,6 @@ Ni 50
 Zi 50
 Mn 30
 ```
+
+This results shows that the optimal result would be 100 dollar coins, 52 quarters,
+2 dimes and 3 nickels.
