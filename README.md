@@ -17,4 +17,8 @@ coins that can be created from those materials?
 |Manganese (Mn)|    |     |      |      |0.3g|
 
 ### Decision Variables
-The **decision variables** are what coins we need to produce
+The **decision variables** are what coins we need to produce: Pennies, 
+Nickles, Dimes, Quarters and Dollars
+
+This then defines our linear objective:
+
