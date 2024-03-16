@@ -78,5 +78,60 @@ End
 Running the optimized with the LP file would follow the following example:
 
 ```text
-gurobi_cl ResultFile=.\scratch-results\coins.sol .\cli-scripts\coins.lp
+gurobi_cl ResultFile=scratch-results/coins.sol cli-scripts/coins.lp
+```
+
+The following is an example terminal output:
+
+```text
+Set parameter Username
+Set parameter LogFile to value "gurobi.log"
+Using license file /Users/shenoyd/gurobi.lic
+
+Gurobi Optimizer version 11.0.1 build v11.0.1rc0 (mac64[arm] - Darwin 23.4.0 23E214)
+Copyright (c) 2024, Gurobi Optimization, LLC
+
+Read LP format model from file cli-scripts/coins.lp
+Reading time = 0.00 seconds
+: 4 rows, 10 columns, 16 nonzeros
+
+CPU model: Apple M2 Max
+Thread count: 12 physical cores, 12 logical processors, using up to 12 threads
+
+Optimize a model with 4 rows, 10 columns and 16 nonzeros
+Model fingerprint: 0x70c07dbd
+Variable types: 5 continuous, 5 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [6e-02, 7e+00]
+  Objective range  [1e-02, 1e+00]
+  Bounds range     [5e+01, 1e+03]
+  RHS range        [0e+00, 0e+00]
+Found heuristic solution: objective -0.0000000
+Presolve removed 1 rows and 5 columns
+Presolve time: 0.00s
+Presolved: 3 rows, 5 columns, 10 nonzeros
+Variable types: 0 continuous, 5 integer (0 binary)
+Found heuristic solution: objective 22.0000000
+
+Root relaxation: objective 1.147436e+02, 3 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  114.74359    0    2   22.00000  114.74359   422%     -    0s
+H    0     0                     114.5000000  114.74359  0.21%     -    0s
+H    0     0                     114.7000000  114.74359  0.04%     -    0s
+
+Cutting planes:
+  MIR: 1
+
+Explored 1 nodes (3 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 12 (of 12 available processors)
+
+Solution count 4: 114.7 114.5 22 -0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.147000000000e+02, best bound 1.147000000000e+02, gap 0.0000%
+
+Wrote result file 'scratch-results/coins.sol'
 ```

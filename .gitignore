@@ -7,3 +7,5 @@
 */target/*
 .DS_Store
 scratch-results
+gurobi.lic
+gurobi.log
