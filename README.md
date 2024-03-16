@@ -43,3 +43,4 @@ constraint for copper:
 ```text
 Cu <= 1000
 ```
+The realities of the problem also need to be reflected.  While a dime is worth 10 cents, half a dime is not worth 5 cents.
