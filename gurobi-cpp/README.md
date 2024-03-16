@@ -31,3 +31,10 @@ env.start();
 The environment (e.g. in this case `env`) can then be used with the Gurobi API.
 
 ### Setting the Variables
+The variables are set within the code base using the `GRBVar` class where the ranges and types are specified:
+
+```text
+GRBVar x = model.addVar(0.0, 1.0, 0.0, GRB_BINARY, "x");
+GRBVar y = model.addVar(0.0, 1.0, 0.0, GRB_BINARY, "y");
+GRBVar z = model.addVar(0.0, 1.0, 0.0, GRB_BINARY, "z");
+```
