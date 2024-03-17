@@ -1,9 +1,0 @@
-#
-# Deepak Shenoy
-#
-# Mar 16, 2024
-#
-cmake-build-debug/
-testing/
-.idea
-
